@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Academic Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <!-- 3D model viewer -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+  <script>
+    self.ModelViewerElement = self.ModelViewerElement || {};
+    self.ModelViewerElement.meshoptDecoderLocation = 'https://cdn.jsdelivr.net/npm/meshoptimizer/meshopt_decoder.js';
+  </script>
+  <style>
+    .model-viewer-container {
+      position: relative;
+      width: 100%;
+      /* Example: Set aspect ratio to 16:9 */
+      padding-bottom: 56.25%; /* 100% * 9 / 16 */
+      overflow: hidden;
+    }
+
+    model-viewer {
+      position: absolute;
+      top: 0;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+    }
+
+  </style>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><big>Dual3D</big>: Efficient and Consistent Text-to-3D Generation with <font color="#90CCFA">Dual</font>-<font color="#F8BC85">mode</font> Multi-view Latent Diffusion</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                Anonymous.</span>
+                  </div>
+            
+              <div class="is-size-4">
+                    <!-- Paper authors -->
+                    An novel approach for realistic text-to-3D generation in <b><big>50 seconds</big></b>.
+
+                        </div>
+              
+
+                  <!-- Github link -->
+                  <!-- <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image carousel -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+        <div class="level">
+          <div class="level-item" style="width:20%">
+            <div class="columns is-centered" style="width:100%;">
+              <div class="column has-text-centered" style="width:100%;">
+                <!-- Your image here -->
+                <div class="model-viewer-container">
+                  <model-viewer alt="mesh" src="static/meshes/a blue and white vase with a lid.glb" environment-image="legacy" shadow-intensity="0.3" camera-controls auto-rotate touch-action="pan-y" camera-orbit="180deg 60deg 100%" min-camera-orbit="auto auto 50%" max-camera-orbit="auto auto 200%" orbit-sensitivity="0.3" max-field-of-view="30deg" min-field-of-view="0deg" style=""></model-viewer>
+                </div>
+                <div class="is-size-7">a blue and white vase with a lid</div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item" style="width:20%">
+            <div class="columns is-centered" style="width:100%;">
+              <div class="column has-text-centered" style="width:100%;">
+                <!-- Your image here -->
+                <div class="model-viewer-container">
+                  <model-viewer alt="mesh" src="static/meshes/a brown paper bag.glb" environment-image="legacy" shadow-intensity="0.3" camera-controls auto-rotate touch-action="pan-y" camera-orbit="180deg 60deg 100%" min-camera-orbit="auto auto 50%" max-camera-orbit="auto auto 200%" orbit-sensitivity="0.3" max-field-of-view="30deg" min-field-of-view="0deg" style=""></model-viewer>
+                </div>
+                <div class="is-size-7"> a brown paper bag</div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item" style="width:20%">
+            <div class="columns is-centered" style="width:100%;">
+              <div class="column has-text-centered" style="width:100%;">
+                <!-- Your image here -->
+                <div class="model-viewer-container">
+                  <model-viewer alt="mesh" src="static/meshes/a chair that looks like a tree.glb" environment-image="legacy" shadow-intensity="0.3" camera-controls auto-rotate touch-action="pan-y" camera-orbit="180deg 60deg 100%" min-camera-orbit="auto auto 50%" max-camera-orbit="auto auto 200%" orbit-sensitivity="0.3" max-field-of-view="30deg" min-field-of-view="0deg" style=""></model-viewer>
+                </div>
+                <div class="is-size-7">a chair that looks like a tree</div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item" style="width:20%">
+            <div class="columns is-centered" style="width:100%;">
+              <div class="column has-text-centered" style="width:100%;">
+                <!-- Your image here -->
+                <div class="model-viewer-container">
+                  <model-viewer alt="mesh" src="static/meshes/a pair of shorts.glb" environment-image="legacy" shadow-intensity="0.3" camera-controls auto-rotate touch-action="pan-y" camera-orbit="180deg 60deg 100%" min-camera-orbit="auto auto 50%" max-camera-orbit="auto auto 200%" orbit-sensitivity="0.3" max-field-of-view="30deg" min-field-of-view="0deg" style=""></model-viewer>
+                </div>
+                <div class="is-size-7">a pair of shorts</div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item" style="width:20%">
+            <div class="columns is-centered" style="width:100%;">
+              <div class="column has-text-centered" style="width:100%;">
+                <!-- Your image here -->
+                <div class="model-viewer-container">
+                  <model-viewer alt="mesh" src="static/meshes/a penguin.glb" environment-image="legacy" shadow-intensity="0.3" camera-controls auto-rotate touch-action="pan-y" camera-orbit="180deg 60deg 100%" min-camera-orbit="auto auto 50%" max-camera-orbit="auto auto 200%" orbit-sensitivity="0.3" max-field-of-view="30deg" min-field-of-view="0deg" style=""></model-viewer>
+                </div>
+                <div class="is-size-7">a penguin</div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column has-text-centered">
+      <div class="is-size-4">
+        <!-- Paper authors -->
+        High-quality meshes generated by our method. <a href="part0.html" target="_blank">
+          <span>Want more?</span>
+          </a>
+      </div>
+    </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column has-text-centered">
+      <div class="is-size-5 publication-authors">   
+              
+        <div class="publication-links">
+          <!-- Arxiv PDF link -->
+            <span class="link-block">
+              <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fas fa-file-pdf"></i>
+              </span>
+              <span>Paper</span>
+            </a>
+          </span>
+
+            <!-- Github link -->
+            <span class="link-block">
+              <a href="https://github.com/YOUR REPO HERE" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>Code</span>
+            </a>
+          </span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column">
+        <img src="static/images/teaser.png">
+      </div> -->
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present Dual3D, a novel text-to-3D generation framework that efficiently generates realistic 3D assets from textual descriptions in 1 minute. The key component of our method is a dual-mode multi-view latent diffusion model. One mode is for efficient 2D multi-view denoising, while the other is for 3D-consistent rendering-based denoising. The model is mostly tuned from a pre-trained 2D latent diffusion model by substituting the single-view latent denoising with a synchronized and interconnected denoising for both multi-view latents and tri-plane representations, circumventing the cost of training from scratch. With the proposed dual-mode toggling inference strategy to use different modes in different denoising steps during inference, our model is capable of generating a clean 3D neural surface in just 10 seconds. In order to mitigate the style bias inherent in the synthesized multi-view dataset, the texture map of the asset mesh, which is extracted from the generated neural surface by denoising, is further optimized by our efficient texture refinement to enhance the photo-realism and details in about 40 seconds.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+      <p>
+        <b><big>Framework:</big></b>
+      </p>
+    </div>
+    <img src="static/images/teaser.png">
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+  </div>
+  </section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column">
+        <img src="static/images/teaser.png">
+      </div> -->
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Compositional Generation</h2>
+        </div>
+        </div>
+      <img src="static/images/fig0.png">
+    </div>
+</section>
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+        <div class="level" style="width:100%">
+          <div class="level-item" style="width:25%">
+            <div class="columns is-centered" style="width:100%;">
+              <div class="column has-text-centered" style="width:100%;">
+                <!-- Your image here -->
+                <div class="model-viewer-container">
+                  <model-viewer alt="mesh" src="static/meshes/part1/a hamburger._17.glb" environment-image="legacy" shadow-intensity="0.3" camera-controls auto-rotate touch-action="pan-y" camera-orbit="180deg 60deg 100%" min-camera-orbit="auto auto 50%" max-camera-orbit="auto auto 200%" orbit-sensitivity="0.3" max-field-of-view="30deg" min-field-of-view="0deg" style=""></model-viewer>
+                </div>
+                <div class="is-size-7">a hamburger</div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item" style="width:25%">
+            <div class="columns is-centered" style="width:100%;">
+              <div class="column has-text-centered" style="width:100%;">
+                <!-- Your image here -->
+                <div class="model-viewer-container">
+                  <model-viewer alt="mesh" src="static/meshes/part1/a hamburger._10.glb" environment-image="legacy" shadow-intensity="0.3" camera-controls auto-rotate touch-action="pan-y" camera-orbit="180deg 60deg 100%" min-camera-orbit="auto auto 50%" max-camera-orbit="auto auto 200%" orbit-sensitivity="0.3" max-field-of-view="30deg" min-field-of-view="0deg" style=""></model-viewer>
+                </div>
+                <div class="is-size-7">a hamburger</div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item" style="width:25%">
+            <div class="columns is-centered" style="width:100%;">
+              <div class="column has-text-centered" style="width:100%;">
+                <!-- Your image here -->
+                <div class="model-viewer-container">
+                  <model-viewer alt="mesh" src="static/meshes/part2/a car made of sushi.glb" environment-image="legacy" shadow-intensity="0.3" camera-controls auto-rotate touch-action="pan-y" camera-orbit="180deg 60deg 100%" min-camera-orbit="auto auto 50%" max-camera-orbit="auto auto 200%" orbit-sensitivity="0.3" max-field-of-view="30deg" min-field-of-view="0deg" style=""></model-viewer>
+                </div>
+                <div class="is-size-7">a car made of sushi</div>
+              </div>
+            </div>
+          </div>
+          <div class="level-item" style="width:25%">
+            <div class="columns is-centered" style="width:100%;">
+              <div class="column has-text-centered" style="width:100%;">
+                <!-- Your image here -->
+                <div class="model-viewer-container">
+                  <model-viewer alt="mesh" src="static/meshes/part2/a SUV car.glb" environment-image="legacy" shadow-intensity="0.3" camera-controls auto-rotate touch-action="pan-y" camera-orbit="180deg 60deg 100%" min-camera-orbit="auto auto 50%" max-camera-orbit="auto auto 200%" orbit-sensitivity="0.3" max-field-of-view="30deg" min-field-of-view="0deg" style=""></model-viewer>
+                </div>
+                <div class="is-size-7">a SUV car</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <div class="is-size-4">
+              <!-- Paper authors -->
+              Diverse and fine-grained generation. <a href="part1.html" target="_blank">
+                <span>Want more?</span>
+                </a>
+            </div>
+          </div>
+        </div>
+      <!--  -->
+      <!--  -->
+    </div>
+  </div>
+</section>
+
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @article{Dual3D2024,
+        author    = {Anonymous},
+        title     = {Dual3D: Efficient and Consistent Text-to-3D Generation with Dual-mode Multi-view Latent Diffusion},
+        journal   = {Under Review},
+        year      = {2024},
+    }
+    </code></pre>
+  </div>
+</section>
+<!--End BibTex citation -->
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">More results</h2>
+      <div id="results-carousel" class="carousel">
+        <!--  -->
+        <div class="item">
+          <div class="level">
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a bald head of a man.gif">
+                  <div class="is-size-7" style="height: 40px">a bald head of a man</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a black and grey camera with a lens.gif">
+                  <div class="is-size-7" style="height: 40px">a black and grey camera with a lens</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a black fish with blue eyes.gif">
+                  <div class="is-size-7" style="height: 40px">a black fish with blue eyes</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a bottle of cooking oil.gif">
+                  <div class="is-size-7" style="height: 40px">a bottle of cooking oil</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a brown couch.gif">
+                  <div class="is-size-7" style="height: 40px">a brown couch</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a campfire.gif">
+                  <div class="is-size-7" style="height: 40px">a campfire</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a cartoon tiger wearing a red shirt.gif">
+                  <div class="is-size-7" style="height: 40px">a cartoon tiger wearing a red shirt</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a chair that looks like fruit.gif">
+                  <div class="is-size-7" style="height: 40px">a chair that looks like fruit</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="item">
+          <div class="level">
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a coffee house.gif">
+                  <div class="is-size-7" style="height: 40px">a coffee house</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a couple of books.gif">
+                  <div class="is-size-7" style="height: 40px">a couple of books</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a tank with a gun on top.gif">
+                  <div class="is-size-7" style="height: 40px">a tank with a gun on top</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a dog with a backpack on its back.gif">
+                  <div class="is-size-7" style="height: 40px">a dog with a backpack on its back</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a green toy dinosaur.gif">
+                  <div class="is-size-7" style="height: 40px">a green toy dinosaur</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a high-rise building with multiple floors.gif">
+                  <div class="is-size-7" style="height: 40px">a high-rise building with multiple floors</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a man wearing a blue shirt and gray pants.gif">
+                  <div class="is-size-7" style="height: 40px">a man wearing a blue shirt and gray pants</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a office building.gif">
+                  <div class="is-size-7" style="height: 40px">a office building</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="item">
+          <div class="level">
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a plate of juicy cooked steak.gif">
+                  <div class="is-size-7" style="height: 40px">a plate of juicy cooked steak</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a plate of mushy green peas.gif">
+                  <div class="is-size-7" style="height: 40px">a plate of mushy green peas</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a red and black toy horse.gif">
+                  <div class="is-size-7" style="height: 40px">a red and black toy horse</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a single red rose in a brown pot.gif">
+                  <div class="is-size-7" style="height: 40px">a single red rose in a brown pot</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a rusty old car.gif">
+                  <div class="is-size-7" style="height: 40px">a rusty old car</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a small Christmas tree made of Legos.gif">
+                  <div class="is-size-7" style="height: 40px">a small Christmas tree made of Legos</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a stone fountain with a spout.gif">
+                  <div class="is-size-7" style="height: 40px">a stone fountain with a spout</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a tall brown lighthouse with a light on top.gif">
+                  <div class="is-size-7" style="height: 40px">a tall brown lighthouse with a light on top</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="item">
+          <div class="level">
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a white bust of a man with a stern expression.gif">
+                  <div class="is-size-7" style="height: 40px">a white bust of a man with a stern expression</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a white helmet with a strap.gif">
+                  <div class="is-size-7" style="height: 40px">a white helmet with a strap</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/a wooden chair with a red cushion.gif">
+                  <div class="is-size-7" style="height: 40px">a wooden chair with a red cushion</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/cookie sheet and grill.gif">
+                  <div class="is-size-7" style="height: 40px">cookie sheet and grill</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/coffee maker.gif">
+                  <div class="is-size-7" style="height: 40px">coffee maker</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/cutting board.gif">
+                  <div class="is-size-7" style="height: 40px">cutting board</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/deep and wide sink with a high-quality faucet.gif">
+                  <div class="is-size-7" style="height: 40px">deep and wide sink with a high-quality faucet</div>
+                </div>
+              </div>
+            </div>
+            <div class="level-item" style="width:12.5%">
+              <div class="columns is-centered" style="width:100%;">
+                <div class="column has-text-centered" style="width:100%;">
+                  <!-- Your image here -->
+                  <img src="static/gifs/fresh carrots.gif">
+                  <div class="is-size-7" style="height: 40px">fresh carrots</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
